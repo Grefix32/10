@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог (i18n)</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/i18next@21.6.16/dist/umd/i18next.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="language-modal" class="modal" hidden>
+    <div class="modal-content">
+      <h2>Оберіть мову / Choose language</h2>
+      <div class="modal-buttons">
+        <button type="button" data-lang="uk">Українська</button>
+        <button type="button" data-lang="en">English</button>
+      </div>
+    </div>
+  </div>
+
+  <main id="catalog-page" hidden>
+    <h1 id="title"></h1>
+    <label id="lang-label" for="language-selector"></label>
+    <select id="language-selector">
+      <option value="uk">Українська</option>
+      <option value="en">English</option>
+    </select>
+    <p id="status"></p>
+    <ul id="catalog-list"></ul>
+  </main>
+</body>
+</html>
